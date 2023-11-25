@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Bootstrap -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<body> 
+    <div class="blog-container container mt-5">
+        <h1 class="text-center mb-4">Blog Q&A</h1>
+        <div class="accordion"  id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  <h5 class="text-info-emphasis">Question 01: Discuss the scope of var, let, and const</h5>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body  ">
+                  <strong>Scope of Var:</strong> Scope basically refers to the area in which these variables can be used. Var declarations can be function/locally or globally scoped.
+                  When a var variable is declared outside of a function, the scope is global. This means that any variable declared outside of a function block using the var keyword is accessible throughout the entire window.
+                  When a variable is declared inside a function, it has function scope. This indicates that it is accessible and limited to that function. <br>
+                  <strong>Scope of let:</strong> A block is a section of code that is bounded by. Curly braces house a block. A block is anything contained in curly brackets.
+                  Consequently, a variable declared in a block with let can only be used in that block. <br>
+                  <strong>Scope of Const:</strong> Constant values are kept for variables specified using the const keyword. Let declarations and const declarations have some similarities.
+                  The scope of const declarations is blocked.
+                  Const declarations, like let declarations are only accessible within the block in which they were made.
+                  It is impossible to modify or re-declare const. 
+                  This indicates that within the scope of a variable declared with const, its value will not change. It cannot be changed or declared again. As a result, if we declare a variable with const, we cannot:
+
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <h5 class="text-info-emphasis">Question 02: Tell us the use cases of null and undefined</h5>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>Null: </strong> Null is an assignment value. It can be assigned to a variable as a representation of no value. It is the intentional absence of the value. It is one of the primitive values of JavaScript. <br>
+                  <strong>Undefined: </strong>Undefined means a variable has been declared but has yet not been assigned a value.It is an ECMAScript1 (ES1) feature.It means the value does not exist in the compiler. It is the global object.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <h5 class="text-info-emphasis">Question 03: What do you mean by REST API?</h5>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>REST API: </strong> A REST API (also known as RESTful API) is an application programming interface (API or web API) that conforms to the constraints of REST architectural style and allows for interaction with RESTful web services. REST stands for representational state transfer and was created by computer scientist Roy Fielding.
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
